@@ -1,0 +1,155 @@
+/*default rule*/
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+
+/*heade section*/
+
+.header {
+	background: #7bcad4;
+	height: 50px;
+	border-top: 2px solid grey;
+	border-bottom: 2px solid grey;
+
+}
+.menu-left{
+	float: left;
+	width: 400px;
+	margin-top: 10px;
+}
+
+.menu-left ul {
+	margin-top: 5px;
+}
+.menu-left ul li {
+	display:inline;
+	border-right: 0px solid grey;
+
+	
+}
+.menu-left ul li a {
+	text-decoration: none;
+	padding: 15px;
+	border-right: 1px solid grey;
+	color: #101012;
+	margin-top: 5px;
+}
+
+
+.menu-left ul li a:hover{}
+
+
+.menu-right{
+	float: right;
+	width: 300px;
+}
+
+.menu-right  ul {
+	
+}
+.menu-right ul li {
+	display: inline;
+}
+.menu-right ul li a {
+	
+	text-decoration: none;
+	padding: 15px;
+	border-right: 1px solid grey;
+}
+
+
+/*content section*/
+
+.content {
+	height:490px;
+	border-bottom:2px solid grey;
+}
+.content-title {
+	width:  auto;
+	height: 40px;
+	background: lightgrey;
+}
+
+.content-title h2 {
+	text-align: center;
+	font-family: Ubuntu;
+	font-weight: bold;
+	font-size: 30px;
+	color: hotpink;
+	margin-top: 2px;
+}
+
+.inner-content{
+	background: grey;
+	/*width: 800px;
+*/
+}
+
+.left{
+	width: 500px;
+	height: 350px;
+	/*border: 2px dashed #ffffff;*/
+	float: left;
+	margin: 10px 60px 0px 100px;
+	background: grey;
+	border-radius: 5px;
+}
+
+.left h1{
+	text-align: center;
+	font-family: cursive;
+	color: hotpink;
+	font-size: 33px;
+}
+.left p {
+	margin: 5px;
+
+	padding: 5px;
+}
+.right {
+	width: 350px;
+	height: 350px;
+	border: 4px solid #f3bcbc;
+	border-radius: 5px;
+	float: left;
+	margin: 10px 20px 0px 100px;
+}
+
+
+
+.about-content {
+	height:490px;
+	border-bottom:2px solid grey;
+}
+
+
+.about {
+	border: 2px dashed grey;
+	height: 370px;
+	width: 800px;
+	margin-left: 100px;
+	margin-top: 10px;
+
+}
+
+.about h1 {
+	margin-left: 10px;
+}
+
+.about ol {
+	margin-left: 15px;
+}
+
+.footer{
+	background: grey;
+	height: 40px;
+}
+
+.footer h2{
+	text-align: center;
+	color: white;
+	padding: 5px;
+}
