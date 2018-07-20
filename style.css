@@ -1,19 +1,25 @@
 /*default rule*/
 
-body{
-	margin: 0;
+body {
+	margin: 0 auto;
 	padding: 0;
+	width: 1000px;
+	background: rgba(204, 164, 204, 0.38);
 }
+* {
+	font-family: Ubuntu;
+
+}
+
 
 
 /*heade section*/
 
 .header {
-	background: #7bcad4;
+	background: #2f707b33;
 	height: 50px;
 	border-top: 2px solid grey;
 	border-bottom: 2px solid grey;
-
 }
 .menu-left{
 	float: left;
@@ -32,14 +38,22 @@ body{
 }
 .menu-left ul li a {
 	text-decoration: none;
-	padding: 15px;
-	border-right: 1px solid grey;
-	color: #101012;
+	padding: 11px;
+	/*border-right: 1px solid grey;*/
+	color: #100d11;
 	margin-top: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	/*text-shadow: 3px 2px  blur purple;*/
+	
 }
 
 
-.menu-left ul li a:hover{}
+.menu-left ul li a:hover{
+	background: #e83119;
+	text-shadow: 1px 1px 2px black, 0 0 24px blue, 0 0 5px darkblue;
+	border-radius: 50px;
+}
 
 
 .menu-right{
@@ -54,7 +68,7 @@ body{
 	display: inline;
 }
 .menu-right ul li a {
-	
+	text-shadow: 2px 2px red;
 	text-decoration: none;
 	padding: 15px;
 	border-right: 1px solid grey;
@@ -78,8 +92,11 @@ body{
 	font-family: Ubuntu;
 	font-weight: bold;
 	font-size: 30px;
-	color: hotpink;
+	color: #e83119;
 	margin-top: 2px;
+}
+.content-title h2:hover {
+	-webkit-transition: color .4s ease-out;
 }
 
 .inner-content{
