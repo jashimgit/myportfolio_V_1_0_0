@@ -16,69 +16,94 @@ body {
 /*heade section*/
 
 .header {
-	background: #2f707b33;
-	height: 50px;
-	border-top: 2px solid grey;
-	border-bottom: 2px solid grey;
+    background: #dc5252;
+    height: 50px;
+    border-top: 2px solid rgba(26, 225, 233, 0.42);
+    border-bottom: 2px solid rgba(26, 225, 233, 0.42);
+    box-shadow: 0px 0px 18px 2px mediumpurple inset;
 }
 .menu-left{
 	float: left;
 	width: 400px;
-	margin-top: 10px;
+	padding: 0;
 }
 
 .menu-left ul {
-	margin-top: 5px;
+	
 }
 .menu-left ul li {
 	display:inline;
-	border-right: 0px solid grey;
-
-	
+	border-right: 1px solid black;
 }
+
+.menu-left ul li:last-child{
+	border-right: 0px;
+}
+
+.menu-left ul li:hover{
+	border-right: none;
+}
+
 .menu-left ul li a {
 	text-decoration: none;
 	padding: 11px;
-	/*border-right: 1px solid grey;*/
 	color: #100d11;
 	margin-top: 5px;
 	font-size: 18px;
 	font-weight: bold;
-	/*text-shadow: 3px 2px  blur purple;*/
-	
 }
+
 
 
 .menu-left ul li a:hover{
-	background: #e83119;
-	text-shadow: 1px 1px 2px black, 0 0 24px blue, 0 0 5px darkblue;
-	border-radius: 50px;
+	background: #2ae6dd;
+	border-radius: 6px;
+	color: white;
+	/*border-right: 0px;*/
+	
 }
-
-
 .menu-right{
 	float: right;
 	width: 300px;
+	/*margin-top: 10px;*/
 }
-
 .menu-right  ul {
 	
 }
 .menu-right ul li {
 	display: inline;
-}
-.menu-right ul li a {
-	text-shadow: 2px 2px red;
-	text-decoration: none;
-	padding: 15px;
-	border-right: 1px solid grey;
+	border-left: 1px solid black;
 }
 
+.menu-right ul li:first-child {
+	border-left: 0px solid black;
+}
+
+.menu-right ul li a {
+    text-decoration: none;
+	padding: 11px;
+	color: #100d11;
+	margin-top: 5px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+
+
+.menu-right ul li a:hover{
+	background: #2ae6dd;
+	border-radius: 6px;
+	color: white;
+
+}
+
+.menu-right ul li:hover{ border-left: none;}
 
 /*content section*/
 
 .content {
-	height:490px;
+	height:540px;
 	border-bottom:2px solid grey;
 }
 .content-title {
@@ -88,16 +113,31 @@ body {
 }
 
 .content-title h2 {
-	text-align: center;
-	font-family: Ubuntu;
-	font-weight: bold;
-	font-size: 30px;
-	color: #e83119;
-	margin-top: 2px;
+    text-align: center;
+    font-family: Ubuntu;
+    font-weight: bold;
+    font-size: 30px;
+    color: #e83119;
+    margin-top: 2px;
+    box-shadow: 0px 0px 2px 1px darkcyan;
+    border-radius: 8px;
 }
 .content-title h2:hover {
-	-webkit-transition: color .4s ease-out;
+	animation-name: example;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	font-family: "Ubuntu, sans-serif";
+	color: White;
+
+
 }
+
+@keyframes example {
+		from {background-color:rgba(0,3,0,.5); color:white;}
+		to {background-color: yellow; color:blue;}
+	}
+
 
 .inner-content{
 	background: grey;
@@ -105,14 +145,15 @@ body {
 */
 }
 
-.left{
-	width: 500px;
+.left {
+	width: 488px;
 	height: 350px;
-	/*border: 2px dashed #ffffff;*/
+	/* border: 2px dashed #ffffff; */
 	float: left;
-	margin: 10px 60px 0px 100px;
-	background: grey;
+	margin: 10px 34px 0px 0px;
+	background: #b6b0b099;
 	border-radius: 5px;
+	box-shadow: 0px -1px 9px 2px rgba(105, 115, 236, 0.5);
 }
 
 .left h1{
@@ -133,31 +174,70 @@ body {
 	border-radius: 5px;
 	float: left;
 	margin: 10px 20px 0px 100px;
+	box-shadow: 0px -1px 9px 2px rgba(105, 115, 236, 0.5);
+}
+.right img:hover {
+	width:200px;
+	height: 200px;
+	margin: 70px;
+	animation-name: image-animation;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
 }
 
+@keyframe image-animation {
+	from {
+		0% {rotate(0deg;)}
+		25% {rotate(25deg)}
+		50% {rotate(100deg)}
+		80% {rotate(180deg)}
+		100% {rotate(180deg)}
+	}
 
+	to {
+		0% {rotate(0deg;)}
+		25% {rotate(25deg)}
+		50% {rotate(100deg)}
+		80% {rotate(180deg)}
+		100% {rotate(180deg)}
+	}
+}
 
 .about-content {
 	height:490px;
-	border-bottom:2px solid grey;
+	border-bottom:2px solid lightgrey;
 }
 
 
 .about {
-	border: 2px dashed grey;
-	height: 370px;
-	width: 800px;
-	margin-left: 100px;
-	margin-top: 10px;
-
+    box-shadow: 0px 1px 12px 4px cadetblue;
+    height: 370px;
+    width: 800px;
+    margin-left: 100px;
+    margin-top: 10px;
 }
 
 .about h1 {
-	margin-left: 10px;
+	padding: 6px;
+	text-decoration: underline;
 }
 
-.about ol {
-	margin-left: 15px;
+
+/*paragrap about*/
+
+.about p {
+	margin: 5px;
+	padding: 4px;
+}
+
+.about p >span{
+	color: cadetblue;
+	/*background: lightgrey;*/
+	font-family: Ubuntu;
+	font-size: 18px;
+	font-weight: bold;
+	font-style: italic;
 }
 
 .footer{
@@ -170,3 +250,14 @@ body {
 	color: white;
 	padding: 5px;
 }
+
+
+/*contact page */ 
+
+.contact {
+	height: 500px;
+	box-shadow: 4px 23px 4px 9px cadetblue;
+	background: grey;
+}
+.con-left{}
+.con-right{}
